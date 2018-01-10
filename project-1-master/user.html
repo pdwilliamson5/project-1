@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>P R O F I L E</title>
+	<meta charset="utf-8">
+	<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- BOOTSTRAP CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!--BOOTSTRAP JAVASCRIPT  -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+	<!-- FIREBASE -->
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<!-- VENUES -->
+	<script type="text/javascript" src="assets/javascript/data.js"></script>
+	<!-- OUR JAVASCRIPT -->
+	<script type="text/javascript" src="assets/javascript/project.js"></script>
+	<!-- RESET CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- OUR CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- SCALE SCALE SCALE -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div class="container-fluid">
+	<div class="object user-top">
+	
+		<!-- <div class="row"> -->
+	<!-- NAVBAR -->
+			<nav class="navbar navbar navbar-dark bg-dark navbar-expand-lg fixed-top myNav">
+				<a class="navbar-brand nav-link" href="index.html"><img class="speakerIcon" src="assets/images/speaker.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expand="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse bg-dark" id="navbarNavDropdown">
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+							<a class="nav-link text-white" id="userNav" href="user.html" style="display: none"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-secondary" href="index.html#featured-shows">Featured Shows</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-secondary" href="index.html#neighborhoods">Neighborhoods</a>
+						</li>
+					</ul>
+					<button type="button" class="btn btn-sm btn-outline-light nav-item my-2 my-sm-0" data-toggle="modal" data-target="#signInModal" id="signBtn">Sign In | Create an Account</button>
+					<button type="submit" class="btn btn-sm btn-outline-light nav-item my-2 my-sm-0" id="outBtn" style="display: none">Sign Out</button>
+				</div>
+			</nav>
+
+		<!-- SIGN IN MODAL  -->
+			<div id="signInModal" class="modal fade" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Sign in</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						</div>
+						<div class="modal-body">
+							<div id="signInForm">
+								<form class="form-signin">
+									<label for="userEmail" class="sr-only">Email Address</label>
+									<input type="email" id="userEmail" class="form-control" placeholder="Email Address" required autofocus>
+									<br>
+									<label for="userPassword" class="sr-only">Password</label>
+									<input type="password" id="userPassword" class="form-control" placeholder="Password" required>
+									<br>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="remember-me">
+											Remember Me
+										</label>
+									</div>
+								</form>
+							</div>
+							<div>
+								<button type="button" class="btn btn-default googleAuth">Sign in with Google</button>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-sm btn-outline-light nav-item my-2 my-sm-0" data-toggle="modal" data-target="#createAcctModal" data-dismiss="modal" id="createLinkBtn">Create an Account</button>
+							<button type="submit" class="btn btn-default" data-dismiss="modal" id="signInBtn">Sign In</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- CREATE ACCOUNT MODAL -->
+			<div id="createAcctModal" class="modal fade" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Create an Account</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						</div>
+						<div class="modal-body">
+							<div id="createAcctForm">
+								<form class="form-signin">
+									<label for="userName" class="sr-only">User Name</label>
+									<input type="text" id="createUsername" class="form-control" placeholder="username" required autofocus>
+									<br>
+									<label for="userEmail" class="sr-only">Email Address</label>
+									<input type="email" id="createEmail" class="form-control" placeholder="Email Address" required autofocus>
+									<br>
+									<label for="userPassword" class="sr-only">Password</label>
+									<input type="password" id="createPassword" class="form-control" placeholder="Password" required>
+								</form>
+							</div>
+							<div>
+								<button type="button" class="btn btn-default googleAuth">Sign in with Google</button>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-default" data-dismiss="modal" id="submitAcct">Create an Account</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+	<br><br>
+
+	<div class="row">
+				<div class="col-xs-4">
+					<div class="pic-holder"></div>
+				</div>
+
+				<div class="col-xs-8">
+					<div class="user-name"><h2>User Name</h2></div>
+				</div>
+				
+	</div>
+
+	<div class="container-fluid sections">
+		<div class="object user-band">
+				<div class="row"> 
+						<div class="col-xs-12">
+							<div class="user-bands">
+								<div class="user-cat-title" id="myShows">Your Shows</div>
+							</div>
+						
+						</div>
+					</div>
+			</div>
+	</div>
+			
+
+	<div class="object user-venue">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="user-venues">
+					<div class="user-cat-title">Your Venues</div>
+					<center>
+					<div class="venue-slot">venue #1</div>
+					<div class="venue-slot">venue #2</div>
+					<div class="venue-slot">venue #3</div>
+					<div class="venue-slot">venue #4</div></center>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="user-calender">
+					<div class="user-cat-title">Your bands</div>
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="row">
+		
+			<div class="footer">
+				<ul class="nav justify-content-center">
+					  <li class="nav-item">
+					    <a class="nav-link active" href="../project-1/index.html">Home</a>
+					  </li>
+					  
+					  <li class="nav-item">
+					    <a class="nav-link" href="../project-1/venue.html">Venues</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="../project-1/user.html">Profile</a>
+					  </li>
+				</ul>
+			</div>
+		
+	</div>
+</div>
+
+
+</body>
+</html>

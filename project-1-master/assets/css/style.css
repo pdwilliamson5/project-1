@@ -1,0 +1,335 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=b1d8f465-9204-433d-9c1c-b4d41165bf27");
+    @font-face{
+        font-family:"DINNextW01-CondensedLig";
+        src:url("../fonts/c0be55e4-0b40-4646-a643-431ca3639465.eot?#iefix");
+        src:url("../fonts/c0be55e4-0b40-4646-a643-431ca3639465.eot?#iefix") format("eot"),url("../fonts/9ef359c1-4458-4560-874a-1f40df1c01d1.woff2") format("woff2"),url("../fonts/43e82893-3880-47b2-82d6-5b136f8f7477.woff") format("woff"),url("../fonts/72f03533-e4e2-48a4-9d34-53d2964eb649.ttf") format("truetype"),url("../fonts/c11fd4df-941d-4a17-8af0-be88e02e0042.svg#c11fd4df-941d-4a17-8af0-be88e02e0042") format("svg");
+    }
+    @font-face{
+        font-family:"DIN Next LT W01 Light Cond It";
+        src:url("../fonts/68a80fcf-c69a-4999-b379-0d4592190673.eot?#iefix");
+        src:url("../fonts/68a80fcf-c69a-4999-b379-0d4592190673.eot?#iefix") format("eot"),url("../fonts/b5b6b76b-2b26-46ef-96a9-ba7a8706fb01.woff2") format("woff2"),url("../fonts/da2f6aa2-5a06-4a92-b373-8109382de71a.woff") format("woff"),url("../fonts/95292217-bf12-483a-95ee-f28f7eb83141.ttf") format("truetype"),url("../fonts/e50ae58e-af9c-4743-954d-8fac9bddca03.svg#e50ae58e-af9c-4743-954d-8fac9bddca03") format("svg");
+    }
+    @font-face{
+        font-family:"DINNextW01-CondensedReg";
+        src:url("../fonts/6fa09720-5b0e-48a5-8895-5af8af928c01.eot?#iefix");
+        src:url("../fonts/6fa09720-5b0e-48a5-8895-5af8af928c01.eot?#iefix") format("eot"),url("../fonts/5dd9f4c4-cfde-415c-bb51-433569311de5.woff2") format("woff2"),url("../fonts/3b15daf5-d7fb-4099-93b9-db20fd26c2fe.woff") format("woff"),url("../fonts/16159505-c85d-44ba-ba2b-64f94e68ddb5.ttf") format("truetype"),url("../fonts/b2be45ad-0169-4c84-9fc9-66a0e9ebff0a.svg#b2be45ad-0169-4c84-9fc9-66a0e9ebff0a") format("svg");
+    }
+    @font-face{
+        font-family:"DIN Next LT W01 Condensed It";
+        src:url("../fonts/0a176c2f-5c95-4054-8f3f-453b3cce1127.eot?#iefix");
+        src:url("../fonts/0a176c2f-5c95-4054-8f3f-453b3cce1127.eot?#iefix") format("eot"),url("../fonts/953cafbe-9515-4e7a-af44-c5dc1c025e53.woff2") format("woff2"),url("../fonts/6597bee5-b9db-40e8-843d-1e3239b43f02.woff") format("woff"),url("../fonts/423bde56-1204-4449-af27-838f9ee024d3.ttf") format("truetype"),url("../fonts/31ea3529-60a4-4abf-a1b3-00cdccef90fa.svg#31ea3529-60a4-4abf-a1b3-00cdccef90fa") format("svg");
+    }
+    @font-face{
+        font-family:"DINNextW01-CondensedMed";
+        src:url("../fonts/0b46a18d-fb34-4ef7-b5da-5902c510577a.eot?#iefix");
+        src:url("../fonts/0b46a18d-fb34-4ef7-b5da-5902c510577a.eot?#iefix") format("eot"),url("../fonts/76b8cda6-0ded-4197-acab-e314297eb90f.woff2") format("woff2"),url("../fonts/2613a064-2962-44af-ae6f-3640e06e8dc4.woff") format("woff"),url("../fonts/2889b152-497e-4ea3-a90d-02854d136a8d.ttf") format("truetype"),url("../fonts/4f311da1-9ec6-4379-9621-b45be0e23abd.svg#4f311da1-9ec6-4379-9621-b45be0e23abd") format("svg");
+    }
+    @font-face{
+        font-family:"DINNextW01-CondensedBol";
+        src:url("../fonts/71888b4d-cd66-4c8b-9a5c-b37014e8e4fa.eot?#iefix");
+        src:url("../fonts/71888b4d-cd66-4c8b-9a5c-b37014e8e4fa.eot?#iefix") format("eot"),url("../fonts/258804c2-9ca6-4856-bad7-67cde4f087b4.woff2") format("woff2"),url("../fonts/0c0418fe-d324-4ab2-978a-e8201c646ca1.woff") format("woff"),url("../fonts/2c4f6a99-1274-42cd-8d14-fecf6ae449a4.ttf") format("truetype"),url("../fonts/aabfdee7-da54-4fae-93d3-afae95449faa.svg#aabfdee7-da54-4fae-93d3-afae95449faa") format("svg");
+    }
+    @font-face{
+        font-family:"DINNextW01-CondensedBla";
+        src:url("../fonts/4fdd4a2f-fc95-4fd1-9b35-a883e0b2b3d6.eot?#iefix");
+        src:url("../fonts/4fdd4a2f-fc95-4fd1-9b35-a883e0b2b3d6.eot?#iefix") format("eot"),url("../fonts/b7952e68-ebbf-4bb8-be04-eec334679561.woff2") format("woff2"),url("../fonts/5a992686-aab3-4b26-9c57-f41b0f01b6fd.woff") format("woff"),url("../fonts/5229463c-ec7d-4d0c-97ca-49aa4ff3abe5.ttf") format("truetype"),url("../fonts/c67946ea-aa8b-46fe-96af-14d6d108b17b.svg#c67946ea-aa8b-46fe-96af-14d6d108b17b") format("svg");
+    }
+
+body{
+	background-color: #000;
+	font-family:"DINNextW01-CondensedLig";
+	color: #383838;
+	font-size: 1.2rem;
+}
+
+/*front page*/
+.sections{
+	position: relative;
+	height: 33.5em;
+	margin-top: 0;
+}
+.myNav{
+	height: 80px;
+}
+.headings{
+	margin: 100px 10px 0px;
+    font-size: 132px;
+
+}
+.speakerIcon{
+	height: 30px;
+	widows: 31px;
+}
+#headerDiv{
+    margin-top: -3rem;
+    background: url(../images/topImage.jpg) no-repeat right bottom
+}
+.headerText{
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 45%;
+	background-color: #2b8ba3;
+	z-index: 2;
+}
+#subTitle{
+	font-size: 36px;
+}
+#textDiv{
+	margin: 175px 12px;
+}
+.title{
+	font-family:"DINNextW01-CondensedReg";
+	color: #fff;
+	font-size: 10rem;
+	letter-spacing: .5rem;
+}
+#titleLive{
+	line-height: 8rem;
+}
+#aboutUs{
+    margin: 15px 0px 0px;
+    font-size: 120px;
+    color:#2b8ba3;
+}
+#blurb{
+    top: 0px;
+    font-size: 56px;
+    left: 12px;
+    color: #fff;
+}
+#featured-shows{
+	position: relative;
+	/*width: 95%;
+	margin:5em auto;*/
+}
+.showDiv{
+	position: absolute;
+    color: #fff;
+    display: inline-block;
+    width: 25%;
+    height: 70%;
+    font-family: "DINNextW01-CondensedReg";
+    font-size: 2rem;
+    padding: 20px;
+    top: 150px
+}
+#hood0{
+	left: 12px;
+}
+#hood1{
+	left: 290px;
+}
+#hood2{
+	left: 550px;
+}
+#hood3{
+	left: 833px;	
+}
+.headliner{
+	font-size:3.8rem; 
+}
+.support{
+	font-size:2rem; 
+	color: #2b8ba3;
+}
+.ven{
+
+}
+.date{
+
+}
+.hoods{
+	color: #fff;
+    display: block;
+    font-size: 70px;
+    padding: 19px 10px 0px;
+}
+
+
+/*User Page*/
+h1{
+   font-family:"DINNextW01-CondensedReg";
+    color: #fff;
+    font-size: 8rem;
+    letter-spacing: .5rem;
+
+}
+
+
+.container-fluid{
+    /*background-color: black;*/
+   /* width:100%;
+    height: 100%;*/
+}
+.object{
+    height:80%;
+    width:100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background
+    padding: 0;
+    margin:0;
+
+}
+.user-top{
+    background-image: url("../images/topImage.jpg");
+}
+
+.user-band{
+    background-image: url("../images/band.jpg");
+    width: 100%;
+}
+
+.user-venue{
+    background-image: url("../images/trees.jpg");
+    width:100%;
+}
+
+
+.col-xs-12{
+    margin-bottom: 150px;
+    width: 100%;
+    height:300px;
+    background-color: #383838;
+}
+
+.pic-holder{
+    margin-top: 41px;
+    margin-left: 25px;
+    width:250px;
+    height: 300px;
+    background-color:#383838; 
+}
+.user-name{
+    font-size: 60px;
+    padding:10px;
+    color:white;
+    margin-top:41px;
+    float: left;
+    width: 450px;
+    height: 200px;
+    background-color:#2b8ba3; 
+}
+.navbar{
+    width: 100%;
+    top:0;
+    position:fixed;
+}
+.user-cat-title{
+    font-family:"DINNextW01-CondensedReg";
+    color: #fff;
+    font-size: 5rem;
+    letter-spacing: .3rem;
+}
+.band-slot{
+    display: inline-block;
+    padding:10px;
+    width:200px;
+    height: 100%;
+    color:white;
+}
+.venue-slot{
+    display: inline-block;
+    padding:10px;
+    width:200px;
+    height: 100%;
+    color:white;
+}
+.footer{
+    text-align: center;
+    width:100%;
+    height: 35px;
+    background-color:black;
+    
+}
+.nav-link{
+    color:#2b8ba3;
+}
+
+/*Venue Page*/
+
+#venue-top-pic{
+    
+    width:100%;
+    height: 300px;
+    background-image: url(../images/kessler.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#venue-top-block{
+    padding-top:75px;
+    /*margin-left: 10px;
+    width:400px;
+    height: 400px;
+    background-color:#2b8ba3;*/ 
+}
+
+#venue-type{
+    padding-top:40px; 
+    text-align: center;
+    
+}
+
+
+.venue-neighborhood{
+    /*text-align: center;*/
+    margin:10px;
+    width: 100%;
+    height: 500px;
+    color:white;
+    background-color: #2b8ba3;
+
+}
+
+.col-md-3{
+    margin:10px;
+    /*text-align: center;*/
+    display: inline-block;
+}
+#hood-name{
+    font-size: 75px;
+    margin: 10px;
+}
+.hood-nav-venue{
+    margin-left:425px;
+    width:100%;
+    height: 35px;
+    background-color:black;
+}
+.vens{
+	color: #383838;
+	font-size: 34px;
+}
+#venueCalendar{
+	display: none;
+}
+.venue-footer{
+    /*text-align: center;*/
+    width:100%;
+    height: 35px;
+    background-color:black;
+    
+}
+#neighborhoodMenuButton{
+	border: none;
+}
+.calDiv{
+	padding-top: 70px;
+}
+.star{
+	color: #2b8ba3;
+	font-size: 40px;
+}
+.perfs,.date{
+	color: #fff;
+}
+.perfs{
+	font-size: 28px;
+}
+.date{
+	font-size: 24px;
+}
